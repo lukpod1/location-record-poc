@@ -1,0 +1,31 @@
+{
+    "body": [
+        {
+            "orderServiceId": "339d4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "deliveryId": "448e4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "position": {
+                "lat": -8.0215,
+                "long": -34.9009,
+                "desc": "Bomba do Hemetério"
+            }
+        },
+        {
+            "deliveryId": "448e4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "orderServiceId": "339d4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "position": {
+                "desc": "Campina do Barreto",
+                "lat": -8.0148645,
+                "long": -34.882224
+            }
+        },
+        {
+            "deliveryId": "448e4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "orderServiceId": "339d4fa0-d8b1-11ea-b4aa-45e11d425263",
+            "position": {
+                "desc": "Água Fria",
+                "lat": -7.9801472,
+                "long": -34.920451
+            }
+        }
+    ]
+}
