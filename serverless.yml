@@ -35,15 +35,13 @@ functions:
     handler: src/createLocation.main
     events:
       - http:
-          path: locations
+          path: create-location
           method: post
           cors: true
-          authorizer: aws_iam
   get:
     handler: src/getLocation.main
     events:
       - http:
-          path: locations
-          method: get
+          path: get-location
+          method: post
           cors: true
-          authorizer: aws_iam

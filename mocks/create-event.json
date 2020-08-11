@@ -1,8 +1,9 @@
 {
-    "orderServiceId": "339d4fa0-d8b1-11ea-b4aa-45e11d425263",
-    "coordinates": {
-        "lat": -8.0215,
-        "long": -34.9009,
-        "desc": "Bomba do Hemetério"
-    }
+    "coordinates": [
+        {
+            "description": "Campina do Barreto",
+            "lat": -8.0148645,
+            "long": -34.882224
+        }
+    ]
 }
