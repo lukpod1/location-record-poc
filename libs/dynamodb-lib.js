@@ -7,4 +7,5 @@ export default {
     put: (params) => client.put(params).promise(),
     query: (params) => client.query(params).promise(),
     scan: (params) => client.scan(params).promise(),
+    update: (params) => client.update(params).promise(),
 };

@@ -16,7 +16,7 @@ provider:
   region: us-east-1
   
   environment:
-    tableName: process.env.TABLE_NAME
+    tableName: locations
 
   iamRoleStatements:
     - Effect: Allow
