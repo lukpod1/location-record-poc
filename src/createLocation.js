@@ -5,7 +5,6 @@ import handler from "../libs/handler-lib";
 export const main = handler(async (event, context) => {
 
     const orderService = await getLocation(event);
-    
     if (orderService === null) {
         const coordinates = [];
         coordinates.push(event.coordinates);
@@ -30,7 +29,7 @@ export const main = handler(async (event, context) => {
             },
             UpdateExpression: "SET coordinates = list_append(coordinates, :newCoordinate)",
             ExpressionAttributeValues: {
-                ":newCoordinate": event.coordinates
+                ":newCoordinate": [event.coordinates]
             },
             ReturnValues: "ALL_NEW"
         };

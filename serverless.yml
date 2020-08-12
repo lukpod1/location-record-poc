@@ -38,10 +38,17 @@ functions:
           path: create-location
           method: post
           cors: true
-  get:
-    handler: src/getLocation.main
+  get-by-os-id:
+    handler: src/getLocationByOrderServiceId.main
     events:
       - http:
-          path: get-location
-          method: post
+          path: get-location-by-os-id/{id}
+          method: get
+          cors: true
+  get-by-delivery-id:
+    handler: src/getLocationByDeliveryId.main
+    events:
+      - http:
+          path: get-location-by-delivery-id/{orderServiceId}/{deliveryId}
+          method: get
           cors: true

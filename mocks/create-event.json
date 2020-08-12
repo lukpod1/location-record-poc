@@ -1,10 +1,9 @@
 {
-    "orderServiceId": "06b09eba-dbdc-11ea-87d0-0242ac130003",
-    "deliveryId": "a6162300-dbdf-11ea-88ff-25b14b773279",
+    "orderServiceId": "57368a7c-dcac-11ea-87d0-0242ac130003",
+    "deliveryId": "608cf322-dcac-11ea-87d0-0242ac130003",
     "coordinates": {
-        "createdAt": "2020-08-11T18:04:39.887Z",
-        "description": "Água Fria",
-        "lat": -7.9801472,
-        "long": -34.920451
+        "lat": -8.0215,
+        "long": -34.9009,
+        "desc": "Bomba do Hemetério"
     }
 }
