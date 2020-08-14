@@ -1,4 +1,5 @@
 {
-    "orderServiceId": "06b09eba-dbdc-11ea-87d0-0242ac130003",
-    "deliveryId": "a6162300-dbdf-11ea-88ff-25b14b773279"
+    "pathParameters": {
+        "id": "06b09eba-dbdc-11ea-87d0-0242ac130003"
+    }
 }

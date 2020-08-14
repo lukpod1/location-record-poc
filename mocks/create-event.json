@@ -1,9 +1,3 @@
 {
-    "orderServiceId": "57368a7c-dcac-11ea-87d0-0242ac130003",
-    "deliveryId": "608cf322-dcac-11ea-87d0-0242ac130003",
-    "coordinates": {
-        "lat": -8.0215,
-        "long": -34.9009,
-        "desc": "Bomba do Hemetério"
-    }
+    "body": "{\"orderServiceId\": \"57368a7c-dcac-11ea-87d0-0242ac130003\",\"deliveryId\": \"608cf322-dcac-11ea-87d0-0242ac130003\",\"coordinates\": {\"lat\": \"-8.0215\",\"long\": \"-34.9009\",\"desc\": \"Bomba do Hemetério\"}}"
 }

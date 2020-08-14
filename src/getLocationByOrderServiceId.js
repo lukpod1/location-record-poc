@@ -3,16 +3,14 @@ import dynamoDb from "../libs/dynamodb-lib";
 
 export const main = handler(async (event, context) => {
 
-    const params = {
+    const result = await dynamoDb.query({
         TableName: process.env.tableName,
         KeyConditionExpression: "orderServiceId = :osId",
         ExpressionAttributeValues: {
-            ":osId": event.orderServiceId
+            ":osId": event.pathParameters.id
         }
+    });
 
-    };
-
-    const result = await dynamoDb.query(params);
     if (!result.Items) {
         throw new Error('Items not found');
     }

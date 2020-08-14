@@ -4,16 +4,18 @@ import handler from "../libs/handler-lib";
 
 export const main = handler(async (event, context) => {
 
-    const orderService = await getLocation(event);
+    const data = JSON.parse(event.body);
+
+    const orderService = await getLocation(data);
     if (orderService === null) {
         const coordinates = [];
-        coordinates.push(event.coordinates);
+        coordinates.push(data.coordinates);
 
         const params = {
             TableName: process.env.tableName,
             Item: {
-                orderServiceId: event.orderServiceId,
-                deliveryId: event.deliveryId,
+                orderServiceId: data.orderServiceId,
+                deliveryId: data.deliveryId,
                 coordinates: coordinates
             }
         };
@@ -24,12 +26,12 @@ export const main = handler(async (event, context) => {
         const params = {
             TableName: process.env.tableName,
             Key: {
-                orderServiceId: event.orderServiceId,
-                deliveryId: event.deliveryId
+                orderServiceId: data.orderServiceId,
+                deliveryId: data.deliveryId
             },
             UpdateExpression: "SET coordinates = list_append(coordinates, :newCoordinate)",
             ExpressionAttributeValues: {
-                ":newCoordinate": [event.coordinates]
+                ":newCoordinate": [data.coordinates]
             },
             ReturnValues: "ALL_NEW"
         };
